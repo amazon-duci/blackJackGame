@@ -5,7 +5,7 @@ let playerEl = document.getElementById('playerName');
 let amountEl = document.getElementById('playerAmount');
 let won = document.getElementById('won');
 let lost = document.getElementById('lost');
-let disp = document.querySelector('.prompt');
+let outputEl = document.querySelector('.prompt');
 let scoreEl = document.getElementById('score');
 
 
@@ -90,7 +90,7 @@ function renderGame(){
         scoreEl.textContent = sum;
         won.textContent = "You won $500";
         lost.textContent = "";
-        disp.style.display = 'block';
+        outputEl.style.display = 'block';
         wonGame = true;
         isAlive = false;
         startCount = 0;
@@ -101,7 +101,7 @@ function renderGame(){
         lost.textContent = "You lost !!!";
         scoreEl.textContent = sum;
         won.textContent = "";
-        disp.style.display = 'block';
+        outputEl.style.display = 'block';
     }
     messageEl.textContent = message;
 }
@@ -122,5 +122,5 @@ function newCard(){
 
 // exit the Result modal
 function closeLog(){
-    disp.style.display = 'none';
+    outputEl.style.display = 'none';
 }
