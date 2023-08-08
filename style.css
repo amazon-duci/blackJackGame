@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blackJackContainer{
+    width: 400px;
+    margin: 10% auto;
+    text-align: center;
+    padding: 10px;
+}
+.blackJackHead{
+    background-color: #016f32;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px;
+    margin-bottom: 3px;
+    font-size: larger;
+    font-weight: bolder;
+    color: goldenrod;
+}
+hr{
+    background-color: goldenrod;
+    margin: 5px;
+    height: 2px;
+    border: none;
+}
+.blackJackBody{
+    background-color: #016f32;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 5px;
+    margin-top: 3px;
+    color: white;
+}
+#player{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#game{
+    padding: 10px;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+button{
+    background-color: goldenrod;
+    border: none;
+    color: #016f32;
+    width: 60%;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 3px;
+    padding: 5px;
+}
+
+.prompt{
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: none;
+}
+.result{
+    width: 400px;
+    margin: 20% auto;
+    text-align: center;
+    background-color: goldenrod;
+    border-radius: 7px;
+}
+#won,#lost{
+    font-weight: bolder;
+    font-size: 50px;
+}
+#won{
+    color: #016f32;
+}
+#lost{
+    color: darkred;
+}
+button{
+    cursor: pointer;
+}
+#prog_ok{
+    margin: 10px;
+    border: 1px solid white;
+}

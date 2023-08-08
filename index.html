@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="blackJackContainer">
+            <div class="blackJackHead">
+                <h2 class="blackJackTitle">Duci Black Jack</h2>
+            </div>
+
+            <div class="blackJackBody">
+                <div id="player">
+                    <div>
+                        <p id="playerName"></p>
+                    </div>
+                    <div>
+                        <p>$ <span id="playerAmount"></span></p>
+                    </div>
+                </div>
+                <hr>
+                <div id="game">
+                    <i><p id="message">Click <b>START GAME</b> to draw cards</p></i>
+                    <p id="cards">Cards: </p>
+                    <p id="sum">Sum: </p>
+                    <button id="startGame" onclick="startGame()">START GAME</button>
+                    <button id="newCard" onclick="newCard()">NEW CARD</button>
+                </div>
+                <p><i>HINT: Get 25 and win the game</i></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="prompt">
+        <div class="result">
+            <p id="won"></p>
+            <p id="lost"></p>
+            <button id="prog_ok" onclick="closeLog()">OK</button>
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
