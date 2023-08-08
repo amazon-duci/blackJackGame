@@ -6,6 +6,7 @@ let amountEl = document.getElementById('playerAmount');
 let won = document.getElementById('won');
 let lost = document.getElementById('lost');
 let disp = document.querySelector('.prompt');
+let scoreEl = document.getElementById('score');
 
 
 function getRandomNumber(){
@@ -55,7 +56,6 @@ function startGame(){
                 amount += deposit;
             }
         }else {
-            sum = 0;
             let firstCard = getRandomNumber();
             let secondCard = getRandomNumber();
             cards = [firstCard, secondCard];
@@ -85,20 +85,21 @@ function renderGame(){
         isAlive = true;
     } else if(sum == 25){
         message = "BOOOOMMM !!!!!";
-        wonGame = true;
-        isAlive = false;
-        amount += 500;
-        sum = 0;        
-        startCount = 0;
+        amount += 500; 
         amountEl.textContent = amount;
+        scoreEl.textContent = sum;
         won.textContent = "You won $500";
         lost.textContent = "";
         disp.style.display = 'block';
+        wonGame = true;
+        isAlive = false;
+        startCount = 0;
     } else {
         message = "Click start game to Try again";
         startCount = 0;
         isAlive = false;
         lost.textContent = "You lost !!!";
+        scoreEl.textContent = sum;
         won.textContent = "";
         disp.style.display = 'block';
     }

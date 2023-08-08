@@ -67,10 +67,15 @@ button{
 }
 .result{
     width: 400px;
-    margin: 20% auto;
+    margin: 15% auto;
     text-align: center;
     background-color: goldenrod;
     border-radius: 7px;
+    padding-top: 15px;
+}
+#score{
+    font-weight: bolder;
+    font-size: 30px;
 }
 #won,#lost{
     font-weight: bolder;
